@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandra Tinoco · Dev Frontend</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="haikyuu-cursor" id="haikyuuCursor">
+  <div class="cursor-ball">🏐</div>
+  <div class="cursor-text" id="cursorText">¡Vamos!</div>
+</div>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container-fluid px-4 px-lg-5">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-at">@</span>alejandra
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home"><span class="nav-num">01.</span> Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-num">02.</span> Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-num">03.</span> Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-num">04.</span> Contacto</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="nav-cta" href="mailto:navvitino@gmail.com">
+            <i class="bi bi-envelope"></i> navvitino@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero-section">
+  <div class="hero-noise"></div>
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="side-text side-left">
+    <span>Frontend Developer · Nicaragua · 2025</span>
+  </div>
+  <div class="side-text side-right">
+    <a href="https://github.com/Nazarethtinoco" target="_blank">github.com/Nazarethtinoco ↑</a>
+  </div>
+  <div class="container-fluid px-4 px-lg-5 hero-inner">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-8">
+        <div class="hero-tag fade-in">
+          <span class="tag-dot"></span>
+          <span class="tag-mono">Disponible para proyectos · UNI Nicaragua</span>
+        </div>
+        <h1 class="hero-name fade-in delay-1">
+          <span class="name-line">Alejandra</span><br>
+          <span class="name-line name-accent">Tinoco<span class="name-dot">.</span></span>
+        </h1>
+        <p class="hero-role fade-in delay-2">
+          Ing. de Sistemas &nbsp;·&nbsp; Dev Frontend &nbsp;·&nbsp;
+        </p>
+        <p class="hero-desc fade-in delay-3">
+          Creo interfaces que no solo funcionan — que se <em>sienten</em> bien.<br>
+          Tercer año en la UNI, construyendo el futuro una línea de código a la vez.
+        </p>
+        <div class="hero-ctas fade-in delay-3">
+          <a href="#projects" class="cta-primary">
+            Ver mis proyectos
+            <span class="cta-arrow">→</span>
+          </a>
+          <a href="#contact" class="cta-ghost">Hablemos</a>
+        </div>
+        <div class="hero-socials fade-in delay-3">
+          <a href="https://github.com/Nazarethtinoco" target="_blank" class="social-pill"><i class="bi bi-github"></i> GitHub</a>
+          <a href="https://wa.me/50581831981" target="_blank" class="social-pill"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:navvitino@gmail.com" class="social-pill"><i class="bi bi-envelope-fill"></i> Email</a>
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center">
+        <div class="hero-visual">
+          <div class="visual-ring ring-1"></div>
+          <div class="visual-ring ring-2"></div>
+          <div class="visual-center">
+            <div class="code-snippet">
+              <p><span class="c-purple">const</span> <span class="c-blue">dev</span> = {</p>
+              <p>&nbsp;&nbsp;<span class="c-green">name</span>: <span class="c-orange">"Alejandra"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="c-green">role</span>: <span class="c-orange">"Frontend"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="c-green">uni</span>: <span class="c-orange">"UNI NI"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="c-green">haikyuu</span>: <span class="c-purple">true</span></p>
+              <p>};</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<div class="stats-band">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 stat-item"><span class="stat-num">3°</span><span class="stat-label">Año en la UNI</span></div>
+      <div class="col-6 col-md-3 stat-item"><span class="stat-num">8+</span><span class="stat-label">Tecnologías</span></div>
+      <div class="col-6 col-md-3 stat-item"><span class="stat-num">☕</span><span class="stat-label">Powered by café</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="section-pad">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-header fade-in">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Sobre <span class="accent">mí</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="row g-5 mt-3 align-items-start">
+      <div class="col-lg-5 fade-in">
+        <div class="about-intro">
+          <p>Hola, soy <strong>Alejandra Nazareth Tinoco Arauz</strong></p>
+          <p>Estudiante de Ingeniería de Sistemas en la <mark>UNI Nicaragua</mark>, actualmente en tercer año. Me apasiona convertir ideas en experiencias web que las personas realmente disfruten usar.</p>
+          <p>Cuando no estoy escribiendo código, estoy viendo <strong>Haikyuu!!</strong> por décima vez o tomando café.</p>
+        </div>
+        <div class="info-grid mt-4">
+          <div class="info-chip"><i class="bi bi-mortarboard-fill"></i><div><strong>Universidad</strong><span>UNI · Ing. de Sistemas</span></div></div>
+          <div class="info-chip"><i class="bi bi-geo-alt-fill"></i><div><strong>Ubicación</strong><span>Managua, Nicaragua 🇳🇮</span></div></div>
+          <div class="info-chip"><i class="bi bi-envelope-fill"></i><div><strong>Correo</strong><span>navvitino@gmail.com</span></div></div>
+          <div class="info-chip"><i class="bi bi-computer"></i><div><strong>Intereses</strong><span>Frontend</span></div></div>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-in delay-1">
+        <h3 class="skills-title">Stack tecnológico</h3>
+        <div class="skills-section">
+          <p class="skills-cat">Frontend</p>
+          <div class="skills-row">
+            <div class="skill-card"><i class="bi bi-filetype-html"></i><span>HTML5</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-filetype-css"></i><span>CSS3</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-filetype-js"></i><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-bootstrap-fill"></i><span>Bootstrap</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+          </div>
+        </div>
+        <div class="skills-section mt-4">
+          <p class="skills-cat">Otras tecnologías</p>
+          <div class="skills-row">
+            <div class="skill-card"><i class="bi bi-git"></i><span>Git</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-filetype-java"></i><span>Java</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-database-fill"></i><span>MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div></div>
+            <div class="skill-card"><i class="bi bi-palette-fill"></i><span>UX/UI</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="skills-cat">Me interesa aprender</p>
+          <div class="interest-tags">
+            <span>React</span><span>Figma</span><span>TypeScript</span><span></span><span>Web Accesibility</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-pad section-alt">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-header fade-in">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Mis <span class="accent">Proyectos</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="section-sub fade-in">Trabajos académicos y personales que reflejan mi aprendizaje</p>
+    <div class="row g-4 mt-3">
+      <div class="col-12 fade-in">
+        <div class="project-card project-featured">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6">
+              <div class="project-preview">
+                <div class="preview-browser">
+                  <div class="browser-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="browser-url">alejandra.dev/portafolio</span></div>
+                  <div class="browser-body"><div class="preview-nav"></div><div class="preview-hero"><div class="ph-line w-60"></div><div class="ph-line w-40"></div><div class="ph-btn"></div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-4 p-lg-5">
+              <div class="project-badge featured-badge">⭐ Proyecto destacado</div>
+              <h3 class="project-title">Portafolio Personal</h3>
+              <p class="project-desc">Página web personal construida desde cero con HTML, CSS puro y JavaScript. Diseño dark mode elegante, completamente responsive y con animaciones suaves.</p>
+              <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span></div>
+              <div class="project-links"><a href="https://github.com/Nazarethtinoco" target="_blank" class="proj-link-primary"><i class="bi bi-github"></i> Ver código</a><a href="#" class="proj-link-ghost"><i class="bi bi-box-arrow-up-right"></i> Demo</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-in delay-1">
+        <div class="project-card">
+          <div class="project-header"><div class="project-icon"><i class="bi bi-diagram-3-fill"></i></div><div class="project-badge">Java · Desktop</div></div>
+          <h4 class="project-title">Sistema de Gestión de Inventario</h4>
+          <p class="project-desc">Aplicación de escritorio desarrollada en Java para la gestión completa de inventario con base de datos MySQL.</p>
+          <div class="project-tech"><span>Java</span><span>MySQL</span><span>JDBC</span><span>Swing</span></div>
+          <div class="project-links"><a href="https://github.com/Nazarethtinoco" target="_blank" class="proj-link-primary"><i class="bi bi-github"></i> Código</a></div>
+        </div>
+      </div>
+      <div class="col-md-6 fade-in delay-2">
+        <div class="project-card">
+          <div class="project-header"><div class="project-icon"><i class="bi bi-database-fill-gear"></i></div><div class="project-badge">Base de datos</div></div>
+          <h4 class="project-title">BD Biblioteca Universitaria</h4>
+          <p class="project-desc">Diseño e implementación completa de base de datos relacional para biblioteca universitaria.</p>
+          <div class="project-tech"><span>SQL</span><span>MySQL</span><span>ERD</span><span>Modelado</span></div>
+          <div class="project-links"><a href="https://github.com/Nazarethtinoco" target="_blank" class="proj-link-primary"><i class="bi bi-github"></i> Código</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-pad">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="section-header fade-in">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Conec<span class="accent">tarme</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="section-sub fade-in">¿Tienes un proyecto? ¿Quieres colaborar? Escríbeme</p>
+    <div class="row g-5 mt-2 justify-content-center">
+      <div class="col-lg-6 fade-in">
+        <form id="contactForm" novalidate class="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label for="nombre">Nombre <span class="req">*</span></label><input type="text" id="nombre" class="custom-input" placeholder="Tu nombre completo"/><span class="error-msg" id="nombreError">Mínimo 3 caracteres.</span></div>
+            <div class="form-group"><label for="email">Correo <span class="req">*</span></label><input type="email" id="email" class="custom-input" placeholder="correo@ejemplo.com"/><span class="error-msg" id="emailError">Correo inválido.</span></div>
+          </div>
+          <div class="form-group"><label for="asunto">Asunto <span class="req">*</span></label><input type="text" id="asunto" class="custom-input" placeholder="¿En qué te puedo ayudar?"/><span class="error-msg" id="asuntoError">Mínimo 3 caracteres.</span></div>
+          <div class="form-group"><label for="mensaje">Mensaje <span class="req">*</span></label><textarea id="mensaje" class="custom-input" rows="5" placeholder="Cuéntame sobre tu proyecto o idea..."></textarea><span class="error-msg" id="mensajeError">Mínimo 10 caracteres.</span></div>
+          <button type="submit" class="submit-btn"><span>Enviar mensaje</span><i class="bi bi-send-fill"></i></button>
+          <div id="successMsg" class="success-alert d-none"><i class="bi bi-check-circle-fill"></i> ¡Mensaje enviado! Te respondo pronto</div>
+        </form>
+      </div>
+      <div class="col-lg-4 fade-in delay-1">
+        <div class="contact-aside">
+          <p class="aside-intro">Prefiero el contacto directo. También puedes encontrarme en:</p>
+          <div class="contact-links">
+            <a href="mailto:navvitino@gmail.com" class="contact-link-card"><div class="cl-icon"><i class="bi bi-envelope-fill"></i></div><div class="cl-info"><strong>Email</strong><span>navvitino@gmail.com</span></div><i class="bi bi-arrow-up-right cl-arrow"></i></a>
+            <a href="https://wa.me/50581831981" target="_blank" class="contact-link-card"><div class="cl-icon wsp"><i class="bi bi-whatsapp"></i></div><div class="cl-info"><strong>WhatsApp</strong><span>+505 8183-1981</span></div><i class="bi bi-arrow-up-right cl-arrow"></i></a>
+            <a href="https://github.com/Nazarethtinoco" target="_blank" class="contact-link-card"><div class="cl-icon gh"><i class="bi bi-github"></i></div><div class="cl-info"><strong>GitHub</strong><span>@Nazarethtinoco</span></div><i class="bi bi-arrow-up-right cl-arrow"></i></a>
+          </div>
+          <div class="availability-badge"><span class="avail-dot"></span> Disponible para proyectos ·</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section">
+  <div class="container-fluid px-4 px-lg-5">
+    <div class="footer-inner">
+      <div class="footer-left"><p class="footer-brand">@alejandra<span class="accent">.</span></p><p class="footer-sub">Ing. de Sistemas · UNI Nicaragua · 2025</p></div>
+      <div class="footer-right"><a href="https://github.com/Nazarethtinoco" target="_blank"><i class="bi bi-github"></i></a><a href="https://wa.me/50581831981" target="_blank"><i class="bi bi-whatsapp"></i></a><a href="mailto:navvitino@gmail.com"><i class="bi bi-envelope-fill"></i></a></div>
+    </div>
+    <div class="footer-copy"><span>© 2025 Alejandra Tinoco</span><span class="accent"> </span><span>Managua, Nicaragua</span></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
